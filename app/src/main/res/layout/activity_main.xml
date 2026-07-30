@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top banner container -->
+    <RelativeLayout
+        android:id="@+id/topBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center" />
+
+    <!-- Bottom banner container -->
+    <RelativeLayout
+        android:id="@+id/bottomBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" />
+
+    <!-- Control buttons in the middle -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/loadTopBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Top Banner" />
+
+        <Button
+            android:id="@+id/hideTopBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide Top Banner" />
+
+        <Button
+            android:id="@+id/loadBottomBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Bottom Banner" />
+
+        <Button
+            android:id="@+id/hideBottomBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide Bottom Banner" />
+
+    </LinearLayout>
+
+</RelativeLayout>
